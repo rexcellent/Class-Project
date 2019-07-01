@@ -1,0 +1,278 @@
+h1 {
+font-family: Franklin Gothic Medium;
+font-size: 4em;
+color: lightslategrey;
+text-shadow: -2px 0 2px black;
+opacity: 0.7;
+
+
+}
+
+
+h2 {
+font-family: fantasy;
+color: lightpink;
+text-shadow: -1px 0 1px black;
+text-align: center;
+padding: 1em 2em;
+opacity: 0.8;
+text-align: center;
+
+
+}
+
+h3 {
+font-family: fantasy;
+color: black;
+text-shadow: -1px 0 1px black;
+text-align: center;
+margin-bottom: 0%;
+padding: 1em 2em;
+opacity: 0.9;
+text-align: center;
+
+}
+
+.hero {
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/calli.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .button {
+  
+  display: block;
+  width: 150px;
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  color: slategray;
+  text-decoration: whitesmoke;
+  font-size: .9em;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: lightgreen;
+  opacity: 0.7;
+}
+
+
+.video {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;;
+
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.box1 {
+margin: 30px;
+padding: 2em 2em;
+background-color: lightpink;
+border: 1px solid black;
+opacity: 0.6;
+
+ 
+}
+
+.box2 {
+width: 90%;
+background-color: lightpink;
+border: 1px solid black;
+opacity: 0.6;
+overflow: hidden;
+position: relative;
+width: 320px;
+height: 450px;
+
+
+}
+
+.carousel-slide {
+display: flex;
+width: auto;
+height: 320px;
+}
+
+#prevBtn {
+position: absolute;
+top: 50%;
+z-index: 10;
+left: 5%;
+font-size: 20px;
+color: lightpink;
+opacity: 0.7;
+cursor: pointer;
+}
+
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 20px;
+  color: lightpink;
+  opacity: 0.7;
+  cursor: pointer;
+  }
+
+
+.box3 {
+  margin: 30px;
+  padding: 2em 2em;
+  background-color: lightpink;
+  border: 1px solid black;
+  opacity: 0.6;
+
+
+}
+
+.form {
+	max-width: 450px;
+}
+
+.form label {
+	display:block;
+	margin-bottom: 10px;
+}
+
+.form label span {
+	float: left;
+	width: 100px;
+	color: #F072A9;
+	font-weight: bold;
+	font-size: 13px;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+.form fieldset {
+	border-radius: 10px;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #FFD2D2;
+	padding: 20px;
+	background: #FFF4F4;
+	box-shadow: inset 0px 0px 15px #FFE5E5;
+}
+
+.form fieldset legend {
+	color: #FFA0C9;
+	border-top: 1px solid #FFD2D2;
+	border-left: 1px solid #FFD2D2;
+	border-right: 1px solid #FFD2D2;
+	border-radius: 5px 5px 0px 0px;
+	background: #FFF4F4;
+	padding: 0px 8px 3px 8px;
+	box-shadow: -0px -1px 2px #F1F1F1;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.form textarea {
+	width: 320px;
+	height: 50px;
+}
+
+.form input[type=text],
+.form input[type=date],
+.form input[type=datetime],
+.form input[type=number],
+.form input[type=search],
+.form input[type=time],
+.form input[type=url],
+.form input[type=email],
+
+.form select, 
+.form textarea {
+	border-radius: 3px;
+	border: 1px solid #FFC2DC;
+	outline: none;
+	color: #F072A9;
+	padding: 5px 8px 5px 8px;
+	box-shadow: inset 1px 1px 4px #FFD5E7;
+	background: #FFEFF6;
+	width:50%;
+}
+
+.form input[type=submit],
+.form input[type=button] {
+	background: deeppink;
+	border: 0.5px solid lightpink;
+	padding: 5px 15px 5px 15px;
+	color: #FFCBE2;
+	box-shadow: inset -1px -1px 3px lightpink;
+	border-radius: 3px;
+	border-radius: 3px;	
+	font-weight: bold;
+}
+
+.form input:hover {
+  color: ghostwhite;
+  background-color: lightpink;
+  transition: color 1.5s ease-in;
+
+}
+
+.required{
+	color:red;
+	font-weight:normal;
+}
+
+.footer {
+  padding: auto;
+  margin: auto;
+  background-color: lightpink;
+  border: 1px solid black;
+  opacity: 0.6;
+  justify-content: center
+}
+
+.footer .footer-icons .fab {
+  font-size: 1.3rem;
+  color: #fefefe;
+}
+
+.footer .footer-icons .fab:hover {
+  color: #4a4a4a;
+  transition: color 0.3s ease-in;
+}
+
+
+.social {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.social li {
+  margin: 0 20px;
+}
+
+.social li a {
+  text-decoration: none;
+
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
