@@ -3,6 +3,7 @@
 
 <head>
   <link type="text/css" rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/fe00672dd7.js"></script>
   <title>Calli's Webpage</title>
 </head>
@@ -23,8 +24,6 @@
       <p>I'm a 6 year old who loves making videos and spending time with my family. One day I would love to become a YouTube content creator.</p>
       <div class="video"><iframe width="450" height="315" src="https://www.youtube.com/embed/KspIp0A9z3c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
   </div>
-
-
   
   <div class="box2">
       <i class="fas fa-arrow-circle-right" id="nextBtn"></i>
@@ -39,8 +38,6 @@
     <img src="images/emily.jpg" id="firstClone">
   </div>
 </div>
-
-<script src="js/script.js"></script>
     
   <div class="box3">
       <div class="form">
@@ -48,22 +45,27 @@
         <p>Become one of the first to get notified about a new video! Be sure to get a parents permission before submitting any information!</p>
           
         <form>
-          <fieldset><legend>About You!</legend>
-          <label for="name"><span>Name <span class="required">*</span></span><input type="text" class="form" name="name"></label>
-          <label for="email-address"><span>Email <span class="required">*</span></span><input type="email" class="form" name="email-address"></label>
-          <label for="phone-number"><span>Phone <span class="required">*</span></span><input type="text" class="form" name="phone-number"></label>
-          <label for="favorite-video"><span>Favorite Type of Videos</span><select name="favorite-video" class="select-field">
-          <option value="Vlogs">Vlogs</option>
-          <option value="Surprise">Surprise Toy Openings</option>
-          <option value="irl">IRL Livestreams</option>
-          </select></label>
-          
-        </fieldset>
+          <fieldset>
+            <legend>About You!</legend>
+            <label for="name">
+            <span>Name:<span class="required"></span></span>
+            <input type="text" class="form" name="name"></label>
+            
+            <label for="email-address"><span>Email:<span class="required"></span></span><input type="email" class="form" name="email-address"></label>
+            <label for="phone-number"><span>Phone:<span class="required"></span></span><input type="text" class="form" name="phone-number"></label>
+            <label for="favorite-video"><span>Favorite Type of Videos:</span><select name="favorite-video" class="select-field">
+            <option value="Vlogs">Vlogs</option>
+            <option value="Surprise">Surprise Toy Openings</option>
+            <option value="irl">IRL Livestreams</option>
+            </select></label>
+
+          </fieldset>
+
           <fieldset><legend>Leave a Personal Message for Me!</legend>
-          <label for="message-input"><span>Message </span><textarea name="personal message" class="personal-message"></textarea></label>
+          <label for="message-input"><span>Message:</span><textarea name="personal message" class="personal-message"></textarea></label>
           <label><input type="submit" value="Submit"></label>
           </fieldset>
-          </form>
+        </form>
           </div>
   
   
@@ -73,9 +75,12 @@
         <div id="overview-wrap"></div>
     </div>
 
+    <div class="b2top">
+        <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button></div>
+<div class="toptext">To Top!</div>
     <footer class="footer">
       <div class="footer-icons">
-        <ul class="menu simple">
+        <ul class="social-link">
 
             <li style="list-style-type: none;">
             <ul style="list-style-type: none;">
@@ -89,7 +94,7 @@
       </div>
     </footer>
 
-
+    <script src="js/script.js"></script>
       </div>
     </div>
 </body>

@@ -38,3 +38,23 @@ carouselSlide.addEventListener('transitionend', ()=>{
     }
 
 });
+
+
+
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topBtn").style.display = "flex";
+  } else {
+    document.getElementById("topBtn").style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
