@@ -345,6 +345,28 @@
     text-decoration: none;
   }
 
+   /* Middle Breakpoint for responsiveness of the flex container while the page is shrinking */
+   @media screen and (max-width: 950px) {
+
+    h1 {
+      font-size: 85px;
+    }
+  
+      .flex-container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+      }
+      
+      .box2 {
+        margin: 20px auto;
+      }
+    
+      .box3 {
+        margin: 20px auto;
+      }
+    }
+
   /* Mobile Media Query to help page be responsive on smaller devices */
   @media screen and (max-width: 640px){
   body{
@@ -371,29 +393,12 @@
     margin-left: auto;
   }
   }
-  
-  /* Middle Breakpoint for responsiveness of the flex container while the page is shrinking */
-  @media screen and (max-width: 950px) {
 
-  h1 {
-    font-size: 75px;
-  }
-
-    .flex-container {
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-content: center;
-    }
-    
-    .box2 {
-      margin: 20px auto;
-    }
-  
-    .box3 {
-      margin: 20px auto;
+  @media screen and (max-width: 480px){
+    h1 {
+      font-size: 55px;
     }
   }
-  
      
   
    
