@@ -4,27 +4,35 @@
   }
   
   h1 {
-  font-family: Franklin Gothic Medium;
-  font-size: 4em;
-  color: whitesmoke;
-  text-shadow: -2px 0 2px black;
-  opacity: 0.5;
+    display: inline;
+    position: relative;
+    font-size: 100px;
+    font: Helvetica, Sans-Serif;
+    letter-spacing: -6px;
+    color: rgba(162, 49, 255, 0.4); 
+    white-space:nowrap;
+  }
+  
+  h1:after {
+    content: "Calli Grace Staley";
+    position: absolute; left:5px; top: 3px;
+    color: rgba(252, 129, 225, 0.5);   
   }
   
   
   h2 {
-  font-family: fantasy;
-  color: whitesmoke;
-  text-shadow: -1px 1px rgb(255, 176, 231, 0.3);
+  font-family: Arial;
+  color: rgb(245, 245, 245, 0.6);
+  text-shadow: -1px 1px rgb(0, 0, 0, 0.4);
   text-align: center;
   padding: 1em 2em;
   text-align: center;
   }
   
   h3 {
-  font-family: fantasy;
-  color: rgba(0, 0, 0, 0.85);
-  text-shadow: -1px 0 1px rgb(255, 255, 255);
+  font-family: 'Franklin Gothic Medium';
+  color: rgb(0, 0, 0, 0.7);
+  text-shadow: -1px 1px rgb(245, 245, 245, 0.6);
   margin: 0%;
   padding: 5px;
   text-align: center;
@@ -89,20 +97,20 @@
     margin-right: 45px;
     padding: 20px;
     border: 1px solid rgba(0, 0, 0);
-    background: rgb(255, 182, 193, 0.7);
+    background: rgb(255, 105, 180, 0.3);
     color: rgba(34, 34, 34, 0.85);
     text-shadow: -1px 0 1px rgb(255, 255, 255);
     text-align: center;
     flex-grow: 1;
   }
   
-  /* Javascript Carousel Box sizing and style */
+  /* Javascript Carousel Container div sizing and style */
   .box2 {
     margin: 20px;
     margin-left: 45px;
     margin-right: auto;
-    padding: 0;
-    background: rgb(255, 182, 193, 0.7);
+    padding: 10px 0 0 0;
+    background: rgb(255, 105, 180, 0.3);
     border: 1px solid black;
     position: relative;
     width: 320px;
@@ -110,14 +118,14 @@
     overflow: hidden;
   }
   
-  /* Actual Carousel sizing */
+  /* Carousel sizing */
   .carousel-slide {
     display: flex;
     width: 320px;
     height: 320px;
   }
   
-  /* Buttons Used to change pictures in Carousel */
+  /* Buttons used to navigate pictures in the carousel */
   #prevBtn {
     position: absolute;
     top: 45%;
@@ -130,13 +138,15 @@
     padding: 20px;
   }
   
+  /* Hover function for buttons*/
   #prevBtn:hover {
     color: lightpink;
-    opacity: 0.8;
+    opacity: 0.7;
     transition: 0.3s ease-in;
     cursor: pointer;
   }
   
+  /* Buttons used to navigate pictures in the carousel */
   #nextBtn {
     position: absolute;
     top: 45%;
@@ -149,24 +159,25 @@
     padding: 20px;
   }
   
+  /* Hover function for buttons*/
   #nextBtn:hover {
     color: lightpink;
-    opacity: 0.8;
+    opacity: 0.7;
     transition: 0.3s ease-in;
     cursor: pointer;
   }
   
-  /* Box that holds the form */
+  /* Container div that holds the form */
   .box3 {
     margin: 20px;
     margin-right: 45px;
     margin-left: auto;
     padding: 20px;
-    background: rgb(255, 182, 193, 0.7);
+    background: rgb(255, 105, 180, 0.3);
     border: 1px solid black;
     width: auto;
     color: rgba(34, 34, 34, 0.85);
-    text-shadow: -1px 0 1px rgb(255, 255, 255);
+    text-shadow: -1px 0 1px rgb(255, 255, 255, 0.5);
   }
   
   /* Form sizing and styles */
@@ -215,6 +226,7 @@
     height: 50px;
   }
   
+  /* Controls the form entry and what keyboards show up on mobile and what auto complete in browsers */
   .form input[type=text],
   .form input[type=date],
   .form input[type=datetime],
@@ -224,6 +236,7 @@
   .form input[type=url],
   .form input[type=email],
   
+  /* Background of form entry and text style */
   .form select, 
   .form textarea {
     border-radius: 3px;
@@ -236,6 +249,7 @@
     width:50%;
   }
   
+  /* Form Button Styles */
   .form input[type=submit],
   .form input[type=button] {
     background: seashell;
@@ -247,20 +261,24 @@
     border-radius: 4px;
   }
   
+  /* Form Submit Button Hover */
   .form input[type=submit]:hover {
     color: ghostwhite;
-    background-color: lightgrey;
-    transition: color 1.5s ease-in;
+    border: solid 1px lightslategray; 
+    background: rgb(255, 105, 180, 0.3);
+    transition: 0.3s ease-in;
   }
   
+  /* Footer Style */
   .footer {
     margin: auto;
-    background-color: lightpink;
+    background-color: rgb(255, 105, 180, 0.3);
     border: 1px solid black;
     opacity: 0.7;
     justify-content: center
   }
   
+  /* To Top Button Style */
   .b2top {
     display: flex;
     justify-content: center;
@@ -272,11 +290,12 @@
     margin: 2px;
   }
   
+  /* To Top Button Hover Style */
   #topBtn:hover {
-    background-color: lightpink;
-    opacity: 0.4;
+    background-color: rgb(255, 105, 180, 0.3);
     transition: 0.5s ease-in;
     cursor: pointer;
+    transform: scale(1);
   }
   
   .toptext {
@@ -289,15 +308,18 @@
     font-weight: bold;
   }
   
+  /* Makes shift back to top of page smooth and not abrupt */
   html {
     scroll-behavior: smooth;
   }
   
+  /* Footer Icon Styles */
   .footer .footer-icons .fab {
     font-size: 1.3rem;
     color: #fefefe;
   }
   
+  /* Footer Icon Hover Effect */
   .footer .footer-icons .fab:hover {
     color: #4a4a4a;
     transition: color 0.3s ease-in;
@@ -322,12 +344,13 @@
   .social li a {
     text-decoration: none;
   }
-  
-  @media (max-width: 640px){
+
+  /* Mobile Media Query to help page be responsive on smaller devices */
+  @media screen and (max-width: 640px){
   body{
     align-content: center;
   }
-  
+
   .hero {
     background-attachment: inherit; 
   }
@@ -349,7 +372,13 @@
   }
   }
   
-  @media (max-width: 950px) {
+  /* Middle Breakpoint for responsiveness of the flex container while the page is shrinking */
+  @media screen and (max-width: 950px) {
+
+  h1 {
+    font-size: 75px;
+  }
+
     .flex-container {
       flex-direction: column;
       justify-content: space-evenly;
