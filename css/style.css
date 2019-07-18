@@ -398,6 +398,12 @@
     h1 {
       font-size: 55px;
     }
+
+    .box1 {
+      width: 340px;
+      margin: 30px;
+      padding: 5px;
+    }
   }
      
   
