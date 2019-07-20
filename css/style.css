@@ -1,6 +1,8 @@
 /* Basic CSS Styles and Font selections */
-.body {
-  background: #FFEFF6
+body {
+  background: rgba(255, 236, 236, 0.747);
+  margin: 0;
+  
   }
   
   h1 {
@@ -9,20 +11,20 @@
     font-size: 100px;
     font: Helvetica, Sans-Serif;
     letter-spacing: -6px;
-    color: rgba(162, 49, 255, 0.4); 
+    color: rgba(255, 255, 255, 0.8); 
     white-space:nowrap;
   }
   
   h1:after {
     content: "Calli Grace Staley";
-    position: absolute; left:5px; top: 3px;
-    color: rgba(252, 129, 225, 0.5);   
+    position: absolute; left:2px; top: 2px;
+    color: rgba(252, 129, 225, 0.4);   
   }
   
   
   h2 {
   font-family: Arial;
-  color: rgb(245, 245, 245, 0.6);
+  color: rgba(255, 255, 255, 0.8);
   text-shadow: -1px 1px rgb(0, 0, 0, 0.4);
   text-align: center;
   padding: 1em 2em;
@@ -132,7 +134,7 @@
     z-index: 10;
     left: 5%;
     font-size: 30px;
-    opacity: 0;
+    opacity: 0.5;
     color: lightslategray;
     cursor: pointer;
     padding: 20px;
@@ -141,7 +143,7 @@
   /* Hover function for buttons*/
   #prevBtn:hover {
     color: lightpink;
-    opacity: 0.7;
+    opacity: 0.8;
     transition: 0.3s ease-in;
     cursor: pointer;
   }
@@ -153,7 +155,7 @@
     z-index: 10;
     right: 5%;
     font-size: 30px;
-    opacity: 0;
+    opacity: 0.5;
     color: lightslategray;
     cursor: pointer;
     padding: 20px;
@@ -162,7 +164,7 @@
   /* Hover function for buttons*/
   #nextBtn:hover {
     color: lightpink;
-    opacity: 0.7;
+    opacity: 0.8;
     transition: 0.3s ease-in;
     cursor: pointer;
   }
@@ -252,12 +254,12 @@
   /* Form Button Styles */
   .form input[type=submit],
   .form input[type=button] {
-    background: seashell;
+    background: rgb(255, 255, 255);
     border: 0.5px solid lightpink;
     padding: 5px 10px 5px 10px;
     color: rgba(0, 0, 0, 0.85);
     text-shadow: -1px 0 1px rgb(255, 255, 255);
-    box-shadow: inset -1px -1px 3px lightpink;
+    box-shadow: inset -1px -1px 3px rgb(255, 219, 224);
     border-radius: 4px;
   }
   
@@ -304,8 +306,7 @@
     font-size: 10px;
     padding: 0;
     margin: 0;
-    font-family: fantasy;
-    font-weight: bold;
+    font-family: Georgia;
   }
   
   /* Makes shift back to top of page smooth and not abrupt */
@@ -394,7 +395,7 @@
   }
   }
 
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 550px){
     h1 {
       font-size: 55px;
     }

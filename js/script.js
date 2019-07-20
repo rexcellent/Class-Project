@@ -41,6 +41,18 @@ carouselSlide.addEventListener('transitionend', ()=>{
 
 });
 
+var hideBtn = document.getElementsByClassName("box2")[0]; 
+
+hideBtn.onmouseover = function() {
+    document.getElementById('nextBtn').style.display = 'block';
+    document.getElementById('prevBtn').style.display = 'block';
+}
+
+hideBtn.onmouseout = function() {
+    document.getElementById('nextBtn').style.display = 'none';
+    document.getElementById('prevBtn').style.display = 'none';
+}
+
 
 /* Controls the "to top" button sending page back to the top */
 function topFunction() {
