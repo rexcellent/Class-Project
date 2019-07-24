@@ -1,5 +1,17 @@
 # PrincessCalliProject
 
+## How to open
+
+1. Download the clone to your computer from git.
+
+2. Open the zip file master folder.
+
+3. Double click on the index.html item in the folder.
+
+4. Enjoy the page! 
+
+**Be sure to hover over the Favorite Things div for some cool Javascript stuff and feel free to watch her open my very expensive item like a savage in her video.**
+
 ## Description
 
 I decided to do this project to start a base website for my daughters future asperations of becoming a YouTube content creator. She really enjoys making videos, being silly on camera, and of course watching others videos. My hope is that in time I will have learned the editing and coding skill required to make this a working website and her a booming YouTube creator.
