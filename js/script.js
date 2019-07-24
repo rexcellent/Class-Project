@@ -41,6 +41,7 @@ carouselSlide.addEventListener('transitionend', ()=>{
 
 });
 
+/* Shows the button on DIV hover*/
 var hideBtn = document.getElementsByClassName("box2")[0]; 
 
 hideBtn.onmouseover = function() {

@@ -4,7 +4,7 @@
 
 I decided to do this project to start a base website for my daughters future asperations of becoming a YouTube content creator. She really enjoys making videos, being silly on camera, and of course watching others videos. My hope is that in time I will have learned the editing and coding skill required to make this a working website and her a booming YouTube creator.
 
-On the technical side I have included a form for capturing data on possible future subscribers, a javascript carousel to display a few images of her favorite things, a link to her first video and a short about me, and a giant hero image of her as the main star of the page. I used FlexBox as the main basis for responsiveness as well as a few media queries to help make it fully funtional. There is two Javascript elements total including the image carousel and the top of page function.
+On the technical side I have included a form for capturing data on possible future subscribers, a javascript carousel to display a few images of her favorite things, a link to her first video and a short about me, and a giant hero image of her as the main star of the page. I used FlexBox as the main basis for responsiveness as well as a few media queries to help make it fully funtional. There is three Javascript elements total including the image carousel and the top of page function.
 
 ## Custom CSS Classes
 
@@ -21,3 +21,5 @@ On the technical side I have included a form for capturing data on possible futu
 1. carousel-slide - This controls the images and allows for them to be cycled through one at a time. I also added a transition so that when the carousel meets the last image in the set it will cycle back to the first image again. This function also works in reverse.
 
 2. topfunction - This just takes the page back to the top when a user is at the bottom of the page and doesn't feel like scrolling.
+
+3. hideBtn - This shows the buttons to change the picture inside the carousel div when you hover over the div.

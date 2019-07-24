@@ -6,21 +6,14 @@ body {
   }
   
   h1 {
-    display: inline;
+    display: inline-block;
     position: relative;
     font-size: 100px;
     font: Helvetica, Sans-Serif;
-    letter-spacing: -6px;
-    color: rgba(255, 255, 255, 0.8); 
+    color: rgba(252, 129, 225, 0.7);
+    border: double 4px #F1F1F1;
     white-space:nowrap;
   }
-  
-  h1:after {
-    content: "Calli Grace Staley";
-    position: absolute; left:2px; top: 2px;
-    color: rgba(252, 129, 225, 0.4);   
-  }
-  
   
   h2 {
   font-family: Arial;
@@ -302,15 +295,6 @@ body {
     transform: scale(1);
   }
   
-  .toptext {
-    justify-content: center;
-    text-align: center;
-    font-size: 10px;
-    padding: 0;
-    margin: 0;
-    font-family: Georgia;
-  }
-  
   /* Makes shift back to top of page smooth and not abrupt */
   html {
     scroll-behavior: smooth;
@@ -348,7 +332,7 @@ body {
     text-decoration: none;
   }
 
-   /* Middle Breakpoint for responsiveness of the flex container while the page is shrinking */
+   /* Breakpoints for responsiveness of the flex container while the page is shrinking */
    @media screen and (max-width: 950px) {
 
     h1 {
@@ -370,8 +354,7 @@ body {
       }
     }
 
-  /* Mobile Media Query to help page be responsive on smaller devices */
-  @media screen and (max-width: 640px){
+  @media screen and (max-width: 750px){
   body{
     align-content: center;
   }
@@ -397,7 +380,7 @@ body {
   }
   }
 
-  @media screen and (max-width: 550px){
+  @media screen and (max-width: 690px){
     h1 {
       font-size: 55px;
     }
